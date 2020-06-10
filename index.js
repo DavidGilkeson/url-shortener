@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const connectDB = require("./config/db");
 
@@ -12,6 +13,12 @@ app.use(
         extended: false
     })
 );
+
+
+// Define Routes
+
+app.use('/', require('./routes/index'));
+app.use('/api/url', require('./routes/url'));
 
 const PORT = 5000;
 

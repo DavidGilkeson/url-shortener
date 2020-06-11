@@ -105,4 +105,4 @@ dist
 
 # JSON files
 *.json
-!package.json
+
